@@ -2,8 +2,8 @@
 
 $userWord= $_GET["nome"];
 $censored= str_replace( $userWord, "***" , $userWord);
-$pippo= "Benvenuto" . " " . $censored . " " . "nel primo esercizio su PHP";
-$pippoLength= strlen($pippo);
+$title= "Benvenuto" . " " . $censored . " " . "nel primo esercizio su PHP";
+$titleLength= strlen($title);
 
 ?>
 
@@ -18,7 +18,7 @@ $pippoLength= strlen($pippo);
 </head>
 <body>
     <h1>La parola segreta inserita è: <?php echo $censored ?></h1>
-    <h1><?php echo $pippo ?></h1>
-    <h1><?php echo $censored ?> Il titolo è lungo: <?php echo $pippoLength ?> caratteri</h1>
+    <h1><?php echo $title ?></h1>
+    <h1><?php echo $censored ?> Il titolo è lungo: <?php echo $titleLength ?> caratteri</h1>
 </body>
 </html>
