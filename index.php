@@ -2,6 +2,7 @@
 
 $userWord= $_GET["nome"];
 $censored= str_replace( $userWord, "***" , $userWord);
+$originalTitle= "Benvenuto" . " " . $userWord . " " . "nel primo esercizio su PHP";
 $title= "Benvenuto" . " " . $censored . " " . "nel primo esercizio su PHP";
 $titleLength= strlen($title);
 
@@ -17,7 +18,10 @@ $titleLength= strlen($title);
     <title>PHP BadWords</title>
 </head>
 <body>
-    <h1>La parola segreta inserita è: <?php echo $censored ?></h1>
+    <h1>La parola segreta inserita è: <?php echo $userWord ?></h1>
+    <h1><?php echo $originalTitle ?></h1>
+    <h1><?php echo $userWord ?> Il titolo è lungo: <?php echo $titleLength ?> caratteri</h1>
+    <h1>La parola <?php echo $userWord ?> sarà censurata</h1>
     <h1><?php echo $title ?></h1>
     <h1><?php echo $censored ?> Il titolo è lungo: <?php echo $titleLength ?> caratteri</h1>
 </body>
