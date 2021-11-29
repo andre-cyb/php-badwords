@@ -2,8 +2,8 @@
 
 $userWord= $_GET["nome"];
 $censored= str_replace( $userWord, "***" , $userWord);
-$originalTitle= "Benvenuto" . " " . $userWord . " " . "nel primo esercizio su PHP";
-$title= "Benvenuto" . " " . $censored . " " . "nel primo esercizio su PHP";
+$originalTitle= "Benvenuto ".$userWord." nel primo esercizio su PHP";
+$title= "Benvenuto ".$censored." nel primo esercizio su PHP";
 $titleLength= strlen($title);
 
 ?>
